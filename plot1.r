@@ -1,3 +1,5 @@
+library(lubridate)
+
 # Read in the data and filter the dates
 dat <- data.table::fread("household_power_consumption.txt")
 dat1 <- filter(dat, Date == "1/2/2007" | Date == "2/2/2007")
